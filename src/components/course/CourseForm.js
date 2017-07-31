@@ -42,6 +42,9 @@ const CourseForm = ({course, allAuthors, onSave, onChange, loading, errors}) => 
         value={loading ? 'Saving...' : 'Save'}
         className="btn btn-primary"
         onClick={onSave} />
+
+      <div>Title: {course.title}</div>
+      <div>Category: {course.category}</div>
     </form>
   );
 };
